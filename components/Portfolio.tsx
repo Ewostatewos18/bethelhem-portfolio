@@ -210,7 +210,6 @@ export function Portfolio() {
               <i>A</i>
               <b>B</b>
             </span>
-            <span className="brand-divider" aria-hidden="true" />
             <span className="brand-text">
               <span className="brand-first">Bethelhem</span>
               <span className="brand-last">Abrham</span>
@@ -252,34 +251,34 @@ export function Portfolio() {
             <svg className="hero-ink-svg" viewBox="0 0 1440 900" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="inkLeft" x1="0.1" y1="0" x2="0.8" y2="1">
-                  <stop offset="0%" stopColor="#2a3448" />
-                  <stop offset="100%" stopColor="#1a202c" />
+                  <stop offset="0%" stopColor="#4a4f5c" />
+                  <stop offset="100%" stopColor="#3c404c" />
                 </linearGradient>
               </defs>
-              {/* Soft bottom-left navy wave — matches mockup curve */}
+              {/* Soft bottom-left primary wave */}
               <path
                 fill="url(#inkLeft)"
                 d="M-80 920
-                   L-80 520
-                   C60 455 180 490 310 560
-                   C450 640 560 720 720 710
-                   C860 700 980 620 1120 660
-                   C1220 690 1300 760 1440 820
+                   L-80 500
+                   C60 435 180 470 310 540
+                   C450 620 560 700 720 690
+                   C860 680 980 600 1120 640
+                   C1220 670 1300 740 1440 800
                    L1440 920
                    Z"
               />
-              {/* Orange contour along wave crest */}
+              {/* Secondary contour along wave crest */}
               <path
-                d="M-50 535
-                   C70 470 190 505 320 575
-                   C460 655 570 735 730 725
-                   C870 715 990 635 1130 675
-                   C1230 705 1310 775 1440 835"
+                d="M-50 515
+                   C70 450 190 485 320 555
+                   C460 635 570 715 730 705
+                   C870 695 990 615 1130 655
+                   C1230 685 1310 755 1440 815"
                 fill="none"
-                stroke="#f37335"
+                stroke="#f3997a"
                 strokeWidth="1.75"
                 strokeLinecap="round"
-                opacity="0.7"
+                opacity="0.8"
               />
             </svg>
           </div>
@@ -291,18 +290,7 @@ export function Portfolio() {
               </p>
               <h1 id="hero-title">
                 <span className="title-line anim-rise delay-1">Bethelhem</span>
-                <span className="title-line accent anim-rise delay-2">
-                  Abrham
-                  <svg className="name-stroke anim-draw" viewBox="0 0 220 18" aria-hidden="true">
-                    <path
-                      d="M4 11c38-8 78-8 116-2 28 4 58 6 96 1"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="6"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
+                <span className="title-line accent anim-rise delay-2">Abrham</span>
               </h1>
               <p className="hero-lead anim-rise delay-3">
                 Logos, brand systems, and social graphics with a clear idea and careful craft.
@@ -329,13 +317,6 @@ export function Portfolio() {
                 <img src={PROFILE_CUT} alt="Bethelhem Abrham" />
               </div>
               <span className="dot-grid" aria-hidden="true" />
-              <p className="hero-script" aria-hidden="true">
-                Design
-                <br />
-                Create
-                <br />
-                Inspire
-              </p>
             </div>
           </div>
 
@@ -431,13 +412,13 @@ export function Portfolio() {
               <path
                 d="M40 560 C220 470 380 520 560 580 C740 640 900 610 1180 520"
                 fill="none"
-                stroke="rgba(243,115,53,0.35)"
+                stroke="rgba(60,64,76,0.35)"
                 strokeWidth="1.5"
               />
               <path
                 d="M80 600 C260 520 420 560 600 620 C780 670 940 640 1160 560"
                 fill="none"
-                stroke="rgba(243,115,53,0.18)"
+                stroke="rgba(60,64,76,0.18)"
                 strokeWidth="1.2"
               />
             </svg>
@@ -465,19 +446,7 @@ export function Portfolio() {
                 About <i />
               </p>
               <h2 id="about-title">
-                Design that reads fast and{" "}
-                <span className="about-accent">
-                  lasts.
-                  <svg className="name-stroke" viewBox="0 0 160 14" aria-hidden="true">
-                    <path
-                      d="M3 9c28-6 58-6 86-1 22 4 42 5 68 1"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
+                Design that reads fast and <span className="about-accent">lasts.</span>
               </h2>
               <p className="about-bio">
                 I’m Bethelhem Abrham, a graphics designer based in Ethiopia. I design logos and brand
@@ -518,11 +487,6 @@ export function Portfolio() {
                   </div>
                 </li>
               </ul>
-              <p className="about-script" aria-hidden="true">
-                Create
-                <br />
-                Inspire
-              </p>
             </div>
           </div>
         </section>
@@ -581,7 +545,6 @@ export function Portfolio() {
             <div className="contact-wash contact-wash--a" />
             <div className="contact-wash contact-wash--b" />
             <span className="contact-dots" />
-            <p className="contact-script">Let’s create</p>
           </div>
 
           <div className="shell contact-grid">
